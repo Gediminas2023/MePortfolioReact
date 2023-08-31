@@ -1,0 +1,128 @@
+.about{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+
+.about-card.bg{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #333;
+}
+.about-card{
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.about-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-right{
+    flex: 1;
+}
+.about-award-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+.about-title{
+    font-weight: 400;
+}
+.about-subtitle{
+    margin: 20px 0;
+}
+.about-destription{
+    font-weight: 300;
+    margin-right: 22px;
+}
+.about-award{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-award-text{
+    width: 70%;
+}
+.about-award-title{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+}
+.list-wrapper {
+    position:relative;
+  }
+  .list-item-wrapper {
+    margin-top:10px;
+    position:relative;
+  }
+  .list-bullet {
+    float:left;
+    margin-right:20px;
+    background: blue;
+    height:20px;
+    width:20px;
+    line-height:21px;
+    border-radius:100px;
+    font-weight:700;
+    color:white;
+    text-align:center;
+    font-size: 14px;
+  }
+  .list-item {
+    display:table-row;
+    vertical-align:middle;
+  }
+  .list-title {
+      font-weight:700;
+  }
+  
+  .blue-line {
+    background: blue;
+    z-index:-1;
+    width:1px;
+    height:90%;
+    position:absolute;
+    left:10px;
+  }
+  .white-line {
+    background:#FFF;
+    z-index:-1;
+    top:0px;
+    width:1px;
+    height:100%;
+    position:absolute;
+    left:15px;
+  }
+  @media screen and (max-width: 480px) {
+    .about{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .about-left{
+        width: 100%;
+    }
+    .about-card{
+        height: 50vh;
+    }
+    .about-card.bg, .about-award{
+        display: none;
+    }
+    .about-right{
+        padding: 20px;
+    }
+}
